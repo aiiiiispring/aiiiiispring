@@ -1,15 +1,19 @@
-package myself.project;
+package com.myself.web;
 
-import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.dromara.x.file.storage.spring.EnableFileStorage;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author aiiiiii
  */
 @SpringBootApplication
-@AllArgsConstructor
+@EnableDiscoveryClient
+@EnableFileStorage
+@ComponentScan(basePackages = {"com.myself.*"})
 @Slf4j
 public class MyselfProjectApplication {
 
