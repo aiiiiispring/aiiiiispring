@@ -1,9 +1,12 @@
 package com.myself.core.api;
 
+import lombok.Getter;
+
 /**
  * @author aiiiiii
- * @CreateTime:2024/07/01/17:39
+ * @CreateTime: 2024/07/01/17:39
  */
+@Getter
 public enum CommonResultCode {
 
     SUCCESS(200, "成功"),
@@ -16,20 +19,12 @@ public enum CommonResultCode {
 
     FORBIDDEN(403, "无权限访问");
 
-    private long code;
-    private String message;
+    private final long code;
+    private final String message;
 
     CommonResultCode(long code, String message) {
         this.code = code;
         this.message = message;
-    }
-
-    public long getCode() {
-        return code;
-    }
-
-    public String getMessage() {
-        return message;
     }
 
 }

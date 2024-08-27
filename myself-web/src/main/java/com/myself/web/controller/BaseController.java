@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author aiiiiii
- * @CreateTime:2024/07/01/17:31
+ * @CreateTime: 2024/07/01/17:31
  */
 @RestController
 @RequestMapping("/base")

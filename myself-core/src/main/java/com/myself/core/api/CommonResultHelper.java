@@ -2,8 +2,8 @@ package com.myself.core.api;
 
 /**
  * @author aiiiiii
- * @Description:返回结果生成工具
- * @CreateTime:2024/07/01/18:05
+ * @Description: 返回结果生成工具
+ * @CreateTime: 2024/07/01/18:05
  */
 public class CommonResultHelper {
 

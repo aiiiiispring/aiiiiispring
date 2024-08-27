@@ -28,13 +28,13 @@
 
         <dependency>
             <groupId>myself</groupId>
-            <artifactId>com.myself.core</artifactId>
+            <artifactId>myself-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>myself</groupId>
-            <artifactId>com.myself.file</artifactId>
+            <artifactId>myself-file</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 

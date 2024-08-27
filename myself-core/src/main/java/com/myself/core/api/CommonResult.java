@@ -8,8 +8,8 @@ import java.io.Serializable;
 
 /**
  * @author aiiiiii
- * @Description:统一返回结果类
- * @CreateTime:2024/07/01/17:31
+ * @Description: 统一返回结果类
+ * @CreateTime: 2024/07/01/17:31
  */
 @Data
 @AllArgsConstructor
