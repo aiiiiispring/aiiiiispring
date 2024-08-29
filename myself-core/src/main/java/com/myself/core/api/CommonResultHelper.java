@@ -15,6 +15,14 @@ public class CommonResultHelper {
         return new CommonResult<>(CommonResultCode.SUCCESS.getCode(), CommonResultCode.SUCCESS.getMessage(), null);
     }
 
+    public static <T> CommonResult<T> badRequest() {
+        return new CommonResult<>(CommonResultCode.BAD_REQUEST.getCode(), CommonResultCode.BAD_REQUEST.getMessage(), null);
+    }
+
+    public static <T> CommonResult<T> badRequest(String message) {
+        return new CommonResult<>(CommonResultCode.BAD_REQUEST.getCode(), message, null);
+    }
+
     public static <T> CommonResult<T> failed(String message) {
         return new CommonResult<>(CommonResultCode.FAILED.getCode(), message, null);
     }
