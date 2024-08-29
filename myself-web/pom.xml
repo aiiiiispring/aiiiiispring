@@ -28,7 +28,7 @@
 
         <dependency>
             <groupId>myself</groupId>
-            <artifactId>myself-core</artifactId>
+            <artifactId>myself-model</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
