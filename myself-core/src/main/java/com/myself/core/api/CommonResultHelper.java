@@ -1,5 +1,7 @@
 package com.myself.core.api;
 
+import com.myself.core.exception.GeneralException;
+
 /**
  * @author aiiiiii
  * @Description: 返回结果生成工具
@@ -41,5 +43,9 @@ public class CommonResultHelper {
 
     public static <T> CommonResult<T> forbidden() {
         return new CommonResult<>(CommonResultCode.FORBIDDEN.getCode(), CommonResultCode.FORBIDDEN.getMessage(), null);
+    }
+
+    public static <T> CommonResult<T> error(GeneralException e) {
+        return new CommonResult<>(e.getStatus(), e.getMsg(), null);
     }
 }

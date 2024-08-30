@@ -26,5 +26,9 @@ public class GeneralException extends RuntimeException {
         this.msg = msg;
     }
 
+    public GeneralException(GeneralExceptionEnum generalExceptionEnum) {
+        this.status = generalExceptionEnum.getCode();
+        this.msg = generalExceptionEnum.getMessage();
+    }
 
 }

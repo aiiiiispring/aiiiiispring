@@ -62,8 +62,8 @@ public class GlobalExceptionHandler {
     @ExceptionHandler({GeneralException.class})
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public CommonResult<?> handleGeneralException(GeneralException e) {
-        log.error("通用异常:{}", e.getMsg());
-        return CommonResultHelper.failed(e.getMsg());
+        log.error("自定义通用异常:{}", e.getMsg());
+        return CommonResultHelper.error(e);
     }
 
 
