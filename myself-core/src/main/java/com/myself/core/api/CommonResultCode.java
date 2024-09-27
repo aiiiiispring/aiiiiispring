@@ -13,7 +13,7 @@ public enum CommonResultCode {
 
     FAILED(500, "失败"),
 
-    BAD_REQUEST(400, "请求参数有误"),
+    BAD_REQUEST(400, "请求方式有误"),
 
     VALIDATE_FAILED(404, "页面不存在"),
 
